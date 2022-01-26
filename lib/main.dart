@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'theme.dart';
 
 void main() => runApp(MyApp());
 
@@ -16,8 +17,13 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Image.asset(
-        'assets/image_splash.png',
+      body: Center(
+        child: Text(
+          'Halo Semuanya',
+          style: secoundaryTextStyle.copyWith(
+            fontSize: 50,
+          ),
+        ),
       ),
     );
   }
